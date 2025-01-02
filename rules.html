@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <style>
+.space {
+  width: 28%;
+  height: auto;
+  display: inline-block;
+}
+.ready,
+.back{
+  //position: relative;
+  font-size: 1em;
+  padding: 0.8em 2em;
+  border-radius: 1em;
+ //display:inline-block;
+}
+.ready{
+  margin-right:20%;
+}
+    body {
+height: 100vh;
+background:url("https://th.bing.com/th/id/OIP.sUHaWIMY5rtxpW2o5aesoAHaEo?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7.jpg");
+background-repeat: no-repeat;
+background-size:100% 100%;
+    }
+  </style>
+</head>
+<body text="white">
+   <h1 style="text-align: center;">Here are few INSTRUCTIONS before you start the quiz.</h1>
+
+    <p style="font-size: 30px;text-align: left;display:flex; flex-direction: column; align-items: center">
+1) The Quiz consist of 10 questions from basic concepts of OOPs, DBMS and IDS.<br><br> 2) Time given for each question is 20seconds.<br><br> 3) If current question is left unanswered within the time limit, next question will be displayed.<br><br> 4) Score rewarded for unanswered questions are zero.<br>
+<br>
+        <h1 style="text-align: center;">Wish you good luck!!</h1>
+    </p>
+<br><br>
+<button type="button" onclick="closeMe()" class="back" style="margin-left:20%;">Not ready for quiz...exit</button>
+<div class="space">
+  </div>
+<button type="button" onclick="openquizpage()" class="ready" >Ready for quiz...</button>
+<script>
+  function closeMe()
+{
+    window.opener = self;
+    window.close();
+}
+function openquizpage(){
+    window.location="index2.html"; 
+}
+</script>
+
+</body>
+</html>
